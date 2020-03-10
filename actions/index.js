@@ -1,7 +1,7 @@
 import axios from 'axios'
 
-const BASE_URL = 'http://localhost:3000'
-// const BASE_URL = 'https://doozone.now.sh'
+const BASE_URL = process.env.BASE_URL;
+
 const ACTIVITY_DATA = []
 const CATEGORY_DATA = [
   {id: 'c-00', name: 'All Activities'},
@@ -15,7 +15,7 @@ const CATEGORY_DATA = [
   {id: 'c-07', name: 'Parks and Skate Parks'},
   {id: 'c-08', name: 'Performing Arts'},
   {id: 'c-09', name: 'Play Centres'},
-  {id: 'c-10', name: 'Sport and Games'}, 
+  {id: 'c-10', name: 'Sport and Games'},
   {id: 'c-11', name: 'Theme Parks and Water Parks'}
 ]
 
@@ -31,7 +31,7 @@ export const CATEGORY_LIST = [
   {value: 'c-07', label: 'Parks and Skate Parks'},
   {value: 'c-08', label: 'Performing Arts'},
   {value: 'c-09', label: 'Play Centres'},
-  {value: 'c-10', label: 'Sport and Games'}, 
+  {value: 'c-10', label: 'Sport and Games'},
   {value: 'c-11', label: 'Theme Parks and Water Parks'}
 ]
 
