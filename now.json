@@ -1,10 +1,5 @@
 {
-  "build": {
-    "env": {
-      "BASE_URL": "@https://jake-test.now.sh"
-    }
-  },
-  "name": "jake-test",
-  "version": 2
+  "env": {
+    "BASE_URL": "@https://jake-test.now.sh"
+  }
 }
-
