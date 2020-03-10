@@ -2,6 +2,7 @@ import axios from 'axios'
 
 const BASE_URL = process.env.BASE_URL;
 
+
 const ACTIVITY_DATA = []
 const CATEGORY_DATA = [
   {id: 'c-00', name: 'All Activities'},
@@ -45,6 +46,8 @@ export const getCategories = () => {
 }
 
 export const getActivities = () => {
+  console.log(BASE_URL);
+  console.log(process.env.BASE_URL);
   return axios.get(`${BASE_URL}/api/v1/activities`).then(res => res.data)
 }
 
